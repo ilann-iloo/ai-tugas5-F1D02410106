@@ -50,25 +50,29 @@ Setelah seluruh pertanyaan dijawab, program menjalankan proses Forward Chaining 
 
 ## Sumber Pengetahuan
 
-**S1. Pengendalian Penggerek Batang Padi**
+**S1. 6 Ancaman Utama pada Tanaman Padi beserta Cara Pengendaliannya**
 
-- Penerbit: Balai Pengkajian Teknologi Pertanian Gorontalo, Kementerian Pertanian.
-- Tahun: 2016.
-- Bagian yang digunakan: Gejala serangan penggerek batang padi, termasuk sundep (kematian anakan muda) dan beluk (malai putih dan hampa).
-- URL: https://repository.pertanian.go.id/handle/123456789/21821
+- Penulis: Rifki Oktiar Rachman (Balai Besar Perpustakaan dan Literasi Pertanian).
+- Penerbit: Buletin Teknologi & Inovasi Pertanian, Kementerian Pertanian.
+- Tahun: 2026.
+- Bagian yang digunakan: Gejala serangan penggerek batang padi, yaitu sundep (pucuk layu, menguning, dan mudah dicabut) pada fase vegetatif serta beluk (malai putih dan hampa) pada fase generatif.
+- URL: https://epublikasi.pertanian.go.id/berkala/btip/article/download/4503/4382/11141
 
-**S2. Info Teknologi: Pengendalian Wereng Batang Coklat pada Padi**
+**S2. Penyuluhan Pengendalian Wereng pada Tanaman Padi dalam Bentuk Gerakan Pengendalian (Gerdal) di Desa Boyolangu, Kecamatan Boyolangu, Kabupaten Tulungagung**
 
-- Penerbit: Pusat Perpustakaan dan Literasi Pertanian, Kementerian Pertanian.
-- Tanggal publikasi: 25 Maret 2023.
-- Bagian yang digunakan: Gejala serangan wereng batang cokelat, yaitu tanaman menguning dan mengering seperti terbakar serta pola kerusakan melingkar (*hopperburn*).
-- URL: https://pustaka.bppsdmp.pertanian.go.id/info-literasi/pengendalian-wereng-batang-coklat-pada-padi
+- Penulis: Mufida Diah Lestari dkk. (Universitas Tulungagung).
+- Penerbit: JANITA (Jurnal Pengabdian Masyarakat Universitas Tulungagung).
+- Tahun: 2023.
+- Bagian yang digunakan: Gejala serangan wereng batang cokelat, yaitu daun menguning mulai dari ujung, meluas ke seluruh tanaman, berubah cokelat jerami, lalu mengering seperti terbakar (*hopperburn*).
+- URL: https://journal.unita.ac.id/index.php/PENGABDIAN/article/download/792/539
 
-**S3. Informasi Ringkas Teknologi Padi – Tikus**
+**S3. Penyuluhan Teknik Pengendalian Tikus Sawah Menggunakan Linear Trap Barrier System di Kelurahan Penyengat Rendah, Kecamatan Telanaipura**
 
-- Penerbit: Repositori Kementerian Pertanian.
-- Bagian yang digunakan: Karakteristik serangan tikus sawah, keberadaan jejak kaki, jalur larian, kotoran, lubang aktif, serta kerusakan yang dimulai dari tengah petak dan meluas ke pinggir.
-- URL: https://repository.pertanian.go.id/bitstreams/82141b7c-8fdc-4772-8859-9a647f67c9d3/download
+- Penulis: Hamdan Maruli Siregar, Weni Wilia, Najla Anwar Fuadi, dan Herni Dwinta Pebrianti (Fakultas Pertanian, Universitas Jambi).
+- Penerbit: Jurnal pengabdian masyarakat (dihosting di jurnal.unimed.ac.id).
+- Tahun: 2021.
+- Bagian yang digunakan: Pengenalan keberadaan tikus sawah lewat jejak kaki, sarang aktif, dan gejala serangan, serta kerusakan yang dimulai dari tengah pertanaman dan meluas ke tepi hingga hanya menyisakan 1–2 baris rumpun.
+- URL: https://jurnal.unimed.ac.id/2012/index.php/jpkm/article/download/27807/pdf
 
 
 ## Aturan IF-THEN
@@ -136,15 +140,11 @@ Pengujian dilakukan dengan memasukkan gejala pucuk menguning dan mati serta dite
 
 Hasil yang diharapkan adalah kesimpulan serangan penggerek batang padi melalui aturan R1 dan R2.
 
-![Hasil pengujian kasus 1](screenshot/kasus-1.png)
-
 ### Hasil Kasus 2: Wereng Batang Cokelat
 
 Pengujian dilakukan dengan memasukkan gejala daun menguning dan mengering, pola kerusakan melingkar seperti terbakar, serta ditemukannya wereng pada rumpun padi.
 
 Hasil yang diharapkan adalah kesimpulan serangan wereng batang cokelat melalui aturan R3 dan R4.
-
-![Hasil pengujian kasus 2](screenshot/kasus-2.png)
 
 ### Hasil Kasus 3: Tikus Sawah
 
@@ -152,15 +152,11 @@ Pengujian dilakukan dengan memasukkan gejala batang padi terpotong, ditemukan je
 
 Hasil yang diharapkan adalah kesimpulan serangan tikus sawah melalui aturan R5 dan R6.
 
-![Hasil pengujian kasus 3](screenshot/kasus-3.png)
-
 ### Hasil Kasus 4: Tidak Ditemukan Kesimpulan
 
 Pengujian dilakukan dengan menjawab seluruh pertanyaan menggunakan `t` (tidak).
 
 Hasil yang diharapkan adalah sistem tidak menemukan kesimpulan karena tidak ada fakta awal yang memenuhi aturan IF-THEN.
-
-![Hasil pengujian kasus 4](screenshot/kasus-4.png)
 
 
 ## Batas Keberlakuan

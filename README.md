@@ -172,4 +172,4 @@ Dalam pengerjaan proyek ini, AI digunakan sebagai alat bantu pada beberapa tahap
 3. **Membantu penyusunan program.** AI membantu menyusun dan menjelaskan kode Python, termasuk pembacaan JSON, penerapan Forward Chaining, memori kerja, dan riwayat inferensi.
 4. **Membantu dokumentasi.** AI membantu menyusun kerangka dan penjelasan pada file `README.md`, termasuk cara menjalankan program dan skenario pengujian.
 
-AI digunakan sebagai alat bantu, bukan sebagai pengganti sumber referensi
+AI digunakan sebagai alat bantu, bukan sebagai pengganti sumber referensi.

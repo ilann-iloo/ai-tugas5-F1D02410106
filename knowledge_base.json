@@ -1,0 +1,99 @@
+{
+    "judul": "Sistem Pakar Identifikasi Hama Tanaman Padi",
+
+    "batas": "Sistem menggunakan pengetahuan dari sumber resmi Kementerian Pertanian dan BBPSI Padi. Identifikasi dibatasi pada tiga jenis hama, yaitu penggerek batang padi, wereng batang cokelat, dan tikus sawah. Hasil merupakan dugaan awal berdasarkan gejala yang dimasukkan pengguna, bukan keputusan akhir atau pengganti pemeriksaan langsung oleh ahli pertanian.",
+
+    "sumber": {
+        "S1": {
+        "judul": "Pengendalian Hama dan Penyakit Utama Tanaman Padi",
+        "penerbit": "Pertanian Press - Kementerian Pertanian, 2024",
+        "url": "https://tanamanpangan.brmp.pertanian.go.id/informasi-publik/download/teknologi-budi-daya/pengendalian-hama-penyakit-utama-pada-tanaman-padi"
+        },
+        "S2": {
+        "judul": "Pengendalian Wereng Batang Coklat pada Padi",
+        "penerbit": "Pustaka BPP SDM Pertanian - Kementerian Pertanian",
+        "url": "https://pustaka.bppsdmp.pertanian.go.id/info-literasi/pengendalian-wereng-batang-coklat-pada-padi"
+        }
+    },
+
+    "pertanyaan": {
+        "pucuk menguning dan mati": "Apakah pucuk atau daun tengah padi menguning dan mati?",
+        "malai putih dan gabah hampa": "Apakah malai padi berwarna putih dan gabahnya hampa?",
+        "larva dalam batang": "Apakah ditemukan larva atau ulat di dalam batang padi?",
+        "daun menguning dan cepat mengering": "Apakah daun padi menguning dan cepat mengering?",
+        "pola melingkar seperti terbakar": "Apakah terdapat pola kerusakan melingkar seperti tanaman terbakar?",
+        "wereng ditemukan pada rumpun": "Apakah ditemukan wereng atau nimfa pada rumpun padi?",
+        "batang padi terpotong": "Apakah batang padi terlihat terpotong?",
+        "jejak kaki atau lubang aktif tikus": "Apakah ditemukan jejak kaki atau lubang aktif tikus di sekitar sawah?",
+        "kerusakan dimulai dari tengah petak": "Apakah kerusakan tanaman dimulai dari tengah petak sawah dan meluas ke pinggir?"
+    },
+
+    "aturan": [
+        {
+        "id": "R1",
+        "jika": [
+            "pucuk menguning dan mati",
+            "malai putih dan gabah hampa"
+        ],
+        "mode": "atau",
+        "maka": "indikasi penggerek batang",
+        "sumber": "S1"
+        },
+        {
+        "id": "R2",
+        "jika": [
+            "indikasi penggerek batang",
+            "larva dalam batang"
+        ],
+        "mode": "dan",
+        "maka": "serangan penggerek batang",
+        "sumber": "S1"
+        },
+        {
+        "id": "R3",
+        "jika": [
+            "daun menguning dan cepat mengering",
+            "pola melingkar seperti terbakar"
+        ],
+        "mode": "dan",
+        "maka": "indikasi wereng batang cokelat",
+        "sumber": "S1"
+        },
+        {
+        "id": "R4",
+        "jika": [
+            "indikasi wereng batang cokelat",
+            "wereng ditemukan pada rumpun"
+        ],
+        "mode": "dan",
+        "maka": "serangan wereng batang cokelat",
+        "sumber": "S1"
+        },
+        {
+        "id": "R5",
+        "jika": [
+            "batang padi terpotong",
+            "jejak kaki atau lubang aktif tikus"
+        ],
+        "mode": "dan",
+        "maka": "indikasi tikus sawah",
+        "sumber": "S1"
+        },
+        {
+        "id": "R6",
+        "jika": [
+            "indikasi tikus sawah",
+            "kerusakan dimulai dari tengah petak"
+        ],
+        "mode": "dan",
+        "maka": "serangan tikus sawah",
+        "sumber": "S1"
+        }
+    ],
+
+    "kesimpulan": [
+        "serangan penggerek batang",
+        "serangan wereng batang cokelat",
+        "serangan tikus sawah"
+    ]
+}
